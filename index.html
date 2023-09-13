@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
@@ -14,58 +14,60 @@
 
         <div class="display-container">
 
-           <input readonly placeholder="Password" class="password" display-passWordDisplay>
-            
-           <button dataCopy>
-                <span display-copyMsg></span>
-                <img src="./assets/copy.svg" alt="Copy" height="23" width="23">
-           </button>
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button data-copy>
+                <span data-copyMsg></span>
+                <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
 
         </div>
 
+
         <div class="input-container">
-            
-            <!-- Password Length Section -->
+
+            <!--password length section-->
             <div class="length-container">
                 <p>Password Length</p>
                 <p data-lengthNumber>0</p>
             </div>
-
-            <!-- Slider -->
+            
+            <!--slider-->
             <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
 
-            <!-- Checkboxes -->
+            <!-- checkboxes-->
             <div>
                 <input type="checkbox" id="uppercase">
-                <label for="uppercase">Includes Uppercase Letters</label>
+                <label for="uppercase">Includes Uppercase letters</label>
             </div>
 
             <div>
                 <input type="checkbox" id="lowercase">
-                <label for="lowercase">Includes all the Lowercase Letters</label>
+                <label for="lowercase">Includes Lowercase letters</label>
             </div>
-            
+
             <div>
                 <input type="checkbox" id="numbers">
-                <label for="numbers">Includes Numbers Letters</label>
+                <label for="numbers">Includes Numbers </label>
             </div>
 
             <div>
                 <input type="checkbox" id="symbols">
-                <label for="symbols">Includes Symbols Letters</label>
-            </div>   
+                <label for="symbols">Includes Symbols </label>
+            </div>
 
+            <!-- strength section-->
             <div class="strength-container">
                 <p>Strength</p>
                 <div data-indicator></div>
             </div>
 
-            <!-- Button -->
+            <!-- generate password-->
             <button class="generateButton">Generate Password</button>
-        </div>  
+
+        </div>
 
     </div>
-
-<script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
